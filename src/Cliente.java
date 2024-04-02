@@ -17,19 +17,35 @@ public class Cliente {
         this.codigo = codigo;
     }
 
-    public java.lang.String getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(java.lang.String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public java.lang.String getEndereco() {
+    public String getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(java.lang.String endereco) {
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public void cadastrarEndereco(String endereco) {
+        setEndereco(endereco);
+    }
+
+    public void imprimirEndereco() {
+        System.out.println(this.endereco);
+    }
+
+    public String retornarNomeCliente(){
+        return "Endereco do Bruno";
+    }
+
+    public int getValorTotal () {
+        return 20;
     }
 }
